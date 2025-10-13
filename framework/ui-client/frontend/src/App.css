@@ -1,0 +1,109 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #1a1a1a;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #2a2a2a;
+  border-bottom: 1px solid #3a3a3a;
+}
+
+.app-header h1 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #fff;
+}
+
+.create-btn {
+  background: #646cff;
+  color: white;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.create-btn:hover {
+  background: #535bf2;
+}
+
+.app-body {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 280px;
+  background: #242424;
+  border-right: 1px solid #3a3a3a;
+  overflow-y: auto;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 1rem;
+  color: #888;
+}
+
+.empty-state h2 {
+  color: #ccc;
+}
+
+.empty-state button {
+  background: #646cff;
+  color: white;
+  border: none;
+  padding: 0.8em 1.5em;
+}
+
+.empty-state button:hover {
+  background: #535bf2;
+}
+
+@media (prefers-color-scheme: light) {
+  .app {
+    background: #f5f5f5;
+  }
+
+  .app-header {
+    background: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .app-header h1 {
+    color: #333;
+  }
+
+  .sidebar {
+    background: #ffffff;
+    border-right: 1px solid #e0e0e0;
+  }
+
+  .empty-state {
+    color: #666;
+  }
+
+  .empty-state h2 {
+    color: #333;
+  }
+}
+

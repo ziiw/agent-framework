@@ -1,0 +1,39 @@
+{
+  "name": "twelve-factor-agent-framework",
+  "version": "0.1.0",
+  "description": "A framework for building production-ready AI agents following the 12-factor principles",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "example": "tsx examples/simple-agent.ts",
+    "example:simple": "tsx examples/simple-agent.ts",
+    "example:multi": "tsx examples/multi-agent.ts",
+    "example:ecommerce": "tsx examples/ecommerce-multi-agent.ts",
+    "example:mcp": "tsx examples/mcp-agent-example.ts",
+    "test:multi-agent": "tsx test-multi-agent.ts",
+    "cli": "tsx src/cli/index.ts"
+  },
+  "keywords": [
+    "ai",
+    "agents",
+    "llm",
+    "openai",
+    "12-factor"
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.0",
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "openai": "^6.2.0",
+    "ora": "^8.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
